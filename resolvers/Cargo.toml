@@ -1,0 +1,22 @@
+[package]
+name = "resolvers"
+version = { workspace = true }
+edition = "2021"
+authors = ["Immutable Labs (Daccred) <gm@daccred.xyz>"]
+license = "MIT"
+publish = false
+
+# Build as a Rust library (rlib) for linking into other crates.
+# Avoid doctest failures under no_std and generated macro docs
+[lib]
+crate-type = ["rlib"]
+doctest = false
+
+[features]
+default = []
+
+[dependencies]
+soroban-sdk = { workspace = true }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }
