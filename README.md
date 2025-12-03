@@ -8,8 +8,8 @@ A collection of Soroban smart contract implementations for the Stellar attestati
 |---------|-------------|
 | `resolvers/` | Core interface library - defines `ResolverInterface` trait and types |
 | `authority/` | Payment-gated authority resolver - organizations pay 100 XLM for attestation eligibility |
-| `token-reward/` | Token reward resolver - distributes token rewards for attestations |
-| `fee-collection/` | Fee collection resolver - collects fees before allowing attestations |
+| `airdrop/` | Airdrop resolver - distributes token rewards for attestations |
+| `taxcollector/` | Tax collector resolver - collects fees before allowing attestations |
 
 ## Quick Start
 
@@ -34,8 +34,8 @@ cargo build --target wasm32v1-none --release
 
 ```bash
 cd authority && make build
-cd token-reward && make build
-cd fee-collection && make build
+cd airdrop && make build
+cd taxcollector && make build
 ```
 
 ### Run Tests
@@ -113,10 +113,10 @@ Protocol Revocation Flow:
 ### Authority Resolver (`authority/`)
 Payment-gated authority verification. Organizations pay 100 XLM to become eligible for attestation, enabling controlled access to the attestation system.
 
-### Token Reward Resolver (`token-reward/`)
+### Airdrop Resolver (`airdrop/`)
 Permissionless attestation with token rewards. Anyone can create attestations and receive token rewards from a managed pool, incentivizing attestation creation.
 
-### Fee Collection Resolver (`fee-collection/`)
+### Tax Collector Resolver (`taxcollector/`)
 Fee-based attestation gating. Collects configurable fees before allowing attestations, enabling monetization of attestation services.
 
 ## License

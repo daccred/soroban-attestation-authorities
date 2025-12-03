@@ -4,8 +4,8 @@ resolver = "2"
 members = [
     "authority",
     "resolvers",
-    "token-reward",
-    "fee-collection",
+    "airdrop",
+    "taxcollector",
 ]
 
 [workspace.package]

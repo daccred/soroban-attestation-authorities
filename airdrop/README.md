@@ -1,4 +1,4 @@
-# Token Reward Resolver
+# Airdrop Resolver
 
 A Soroban smart contract that implements the `ResolverInterface` for permissionless attestation with automatic token reward distribution.
 
@@ -14,7 +14,7 @@ This resolver implements an open, permissionless model where:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  TokenRewardResolver                                                    │
+│  AirdropResolver                                                        │
 │                                                                         │
 │  1. Admin funds reward pool with tokens                                │
 │  2. User creates attestation (permissionless)                          │

@@ -1,5 +1,5 @@
-# Makefile for fee-collection resolver contract
-CRATE := fee_collection
+# Makefile for airdrop resolver contract
+CRATE := airdrop
 TARGET ?= wasm32v1-none
 PROFILE ?= release
 DIST := dist

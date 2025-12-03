@@ -1,4 +1,4 @@
-# Fee Collection Resolver
+# Tax Collector Resolver
 
 A Soroban smart contract that implements the `ResolverInterface` for fee-gated attestation with configurable fee collection.
 
@@ -14,7 +14,7 @@ This resolver implements a fee-based access model where:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│  FeeCollectionResolver                                                  │
+│  TaxCollectorResolver                                                   │
 │                                                                         │
 │  1. Admin configures fee token, amount, and recipient                  │
 │  2. User attempts to create attestation                                │

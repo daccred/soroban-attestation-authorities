@@ -1,5 +1,5 @@
-# Makefile for token-reward resolver contract
-CRATE := token_reward
+# Makefile for taxcollector resolver contract
+CRATE := taxcollector
 TARGET ?= wasm32v1-none
 PROFILE ?= release
 DIST := dist

@@ -15,6 +15,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "airdrop"
+version = "1.3.6"
+dependencies = [
+ "resolvers",
+ "soroban-sdk",
+ "stellar-macros",
+ "stellar-tokens",
+]
+
+[[package]]
 name = "android_system_properties"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -555,14 +565,6 @@ name = "ethnum"
 version = "1.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ca81e6b4777c89fd810c25a4be2b1bd93ea034fbe58e6a75216a34c6b82c539b"
-
-[[package]]
-name = "fee-collection"
-version = "1.3.6"
-dependencies = [
- "resolvers",
- "soroban-sdk",
-]
 
 [[package]]
 name = "ff"
@@ -1473,6 +1475,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "taxcollector"
+version = "1.3.6"
+dependencies = [
+ "resolvers",
+ "soroban-sdk",
+]
+
+[[package]]
 name = "thiserror"
 version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1521,16 +1531,6 @@ checksum = "30cfb0125f12d9c277f35663a0a33f8c30190f4e4574868a330595412d34ebf3"
 dependencies = [
  "num-conv",
  "time-core",
-]
-
-[[package]]
-name = "token-reward"
-version = "1.3.6"
-dependencies = [
- "resolvers",
- "soroban-sdk",
- "stellar-macros",
- "stellar-tokens",
 ]
 
 [[package]]

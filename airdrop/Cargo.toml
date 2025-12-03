@@ -1,5 +1,5 @@
 [package]
-name = "token-reward"
+name = "airdrop"
 version = { workspace = true }
 edition = "2021"
 authors = ["Immutable Labs (Daccred) <gm@daccred.xyz>"]

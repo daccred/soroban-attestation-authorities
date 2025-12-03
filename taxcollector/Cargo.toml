@@ -1,5 +1,5 @@
 [package]
-name = "fee-collection"
+name = "taxcollector"
 version = { workspace = true }
 edition = "2021"
 authors = ["Immutable Labs (Daccred) <gm@daccred.xyz>"]
