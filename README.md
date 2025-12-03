@@ -11,6 +11,46 @@ A collection of Soroban smart contract implementations for the Stellar attestati
 | `airdrop/` | Airdrop resolver - distributes token rewards for attestations |
 | `taxcollector/` | Tax collector resolver - collects fees before allowing attestations |
 
+```
+soroban-attestation-authorities/
+├── Cargo.toml                 # Workspace configuration
+├── README.md
+│
+├── resolvers/                 # Interface library (no contract)
+│   ├── Cargo.toml
+│   ├── Makefile
+│   └── src/
+│       ├── lib.rs
+│       └── interface.rs       # ResolverInterface trait & types
+│
+├── authority/                 # Payment-gated resolver
+│   ├── Cargo.toml
+│   ├── Makefile
+│   ├── README.md
+│   └── src/
+│       ├── lib.rs
+│       ├── state.rs
+│       ├── errors.rs
+│       ├── events.rs
+│       ├── access_control.rs
+│       ├── payment.rs
+│       └── instructions/
+│
+├── airdrop/                   # Token reward resolver
+│   ├── Cargo.toml
+│   ├── Makefile
+│   ├── README.md
+│   └── src/
+│       └── lib.rs
+│
+└── taxcollector/              # Fee collection resolver
+    ├── Cargo.toml
+    ├── Makefile
+    ├── README.md
+    └── src/
+        └── lib.rs
+```
+
 ## Quick Start
 
 ### Prerequisites
