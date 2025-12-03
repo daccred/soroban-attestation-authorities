@@ -1,0 +1,18 @@
+[package]
+name = "fee-collection"
+version = { workspace = true }
+edition = "2021"
+authors = ["Immutable Labs (Daccred) <gm@daccred.xyz>"]
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { workspace = true }
+resolvers = { path = "../resolvers", default-features = false }
+
+[dev-dependencies]
+soroban-sdk = { workspace = true, features = ["testutils"] }

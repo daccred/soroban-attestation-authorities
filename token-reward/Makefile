@@ -1,12 +1,12 @@
-# Makefile for authority resolver contract
-CRATE := authority
+# Makefile for token-reward resolver contract
+CRATE := token_reward
 TARGET ?= wasm32v1-none
 PROFILE ?= release
 DIST := dist
-# Workspace-level target directory
+# Workspace-level target directory (crate name uses underscores)
 WASM := ../target/$(TARGET)/$(PROFILE)/$(CRATE).wasm
 
-.PHONY: help test clean build deploy bindings fmt lint all
+.PHONY: help test clean build deploy bindings
 
 help:
 	@echo "Available targets:"
@@ -15,9 +15,6 @@ help:
 	@echo "  build                - Build WASM contract"
 	@echo "  deploy               - Deploy contract (requires IDENTITY, NETWORK)"
 	@echo "  bindings             - Generate TypeScript bindings (requires CONTRACT_ID)"
-	@echo "  fmt                  - Format code"
-	@echo "  lint                 - Run clippy linter"
-	@echo "  all                  - Format, lint, and build"
 
 test:
 	cargo test -q
@@ -51,11 +48,3 @@ bindings:
 		--network "$(NETWORK)" \
 		--output-dir bindings
 	@echo "Generated TypeScript bindings in bindings/"
-
-fmt:
-	cargo fmt
-
-lint:
-	cargo clippy -- -D warnings
-
-all: fmt lint build

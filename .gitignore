@@ -16,3 +16,8 @@ logs.txt
 *_research.rs
 .stellar
 .claude
+
+# Project-specific build artifacts
+*/dist/
+*/bindings/
+node_modules/
